@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background: #7473b3; 
+    background: linear-gradient(to right, #7473b3, #a64ca6);
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(241, 234, 234, 0.1);
+    width: 25%;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 100px;
+    align-items: center;
+    margin-top: 200px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font: 2em;
+}
+
+input {
+    width: 100%; /* Change to 100% for smaller screens */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+button {
+    background: #7473b3; /* fallback color if gradients are not supported */
+    background: linear-gradient(to right, #7473b3, #a64ca6);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; /* Change to 100% for smaller screens */
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #082968;
+}
+
+#output,
+#result,
+#final {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    input,
+    button {
+        width: 100%;
+    }
+}

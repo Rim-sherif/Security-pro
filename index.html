@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Algorithm Tester</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1>Affine Algorithm Tester</h1>
+    
+        <label for="message">Enter Message:</label>
+        <textarea id="inputtext" rows="3" cols="50"></textarea>
+        <label for="key">Enter Key 1:</label><input type="text" id="key2">
+        <label for="key">Enter Key 2:</label><input type="text" id="key3">
+        <button onclick="performEncryption()">Encrypt</button>
+        <button onclick="performDecryption()">Decrypt</button>
+    
+        <h2>Results:</h2>
+        <textarea id="output" readonly></textarea>
+    </div>
+
+
+    <div class="container">
+        <h1>Caeser Algorithm Tester</h1>
+
+        <label for="message">Enter Message:</label>
+        <textarea id="mesg" rows="3" cols="50"></textarea>
+
+        <label for="key">Enter Shift Amount:</label>
+        <input type="text" id="key10">
+        
+        <button onclick="encryptCeaser()">Encrypt</button>
+        <button onclick="decryptCeaser()">Decrypt</button>
+
+        <h2>Results:</h2>
+        <textarea id="result" readonly></textarea>
+    </div>
+
+
+    <div class="container">
+        <h1>Vigenere Cipher Tester</h1>
+
+        <label for="plainText">Enter Plain Text:</label>
+        <textarea id="plainText" rows="3" cols="50"></textarea>
+
+        <label for="key">Enter Key:</label>
+        <input type="text" id="key">
+
+        <button onclick="vigenereEncrypt()">Encrypt</button>
+        <button onclick="vigenereDecrypt()">Decrypt</button>
+
+        <h2>Results:</h2>
+        <textarea id="final" readonly></textarea>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
